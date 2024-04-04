@@ -128,7 +128,7 @@ export const addPlanet1 = () =>{
     const geometry = new THREE.SphereGeometry(0.5, 36, 18)
     const material = new THREE.MeshPhysicalMaterial({
         displacementMap :displace,
-        color: 0xff4d4d,
+        color: 0xff9999,
         displacementScale: 0.6,
         aoMap: Ambient,
         roughnessMap: roughness,
@@ -164,7 +164,7 @@ export function addPlanet2(){
 
 export function addPlanet3(){
     const sphere = new THREE.SphereGeometry(0.5, 32, 16)
-    const sphereMat = new THREE.MeshBasicMaterial({color: 0xff0000})
+    const sphereMat = new THREE.MeshBasicMaterial({color: 0xff6000})
     const sphereMash = new THREE.Mesh(sphere, sphereMat)
     sphereMash.position.set(1, 1, 0)
     return sphereMash

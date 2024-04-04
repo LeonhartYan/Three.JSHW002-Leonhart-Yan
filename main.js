@@ -89,6 +89,8 @@ function animate() {
  meshes.addPlanet2.rotation.y -= 0.01
  meshes.ball.position.x = Math.sin(tick* 0.1)* 2
  meshes.ball.position.y = Math.cos(tick * 0.1) *2
+ meshes.addGlassKnot.rotation.z -= 0.001
+ meshes.addMatcap.rotation.z -= 0.001
  renderer.render(scene, camera)
  
 }
